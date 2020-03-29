@@ -16,7 +16,7 @@ module.exports = {
             uf,
         })
     
-        return res.json({})
+        return res.json({id})
     },
     async list(req,res){
         const ongs = await connection('ongs').select('*')
